@@ -1,2 +1,5 @@
 # Here_We_Go
-ㄟ(˙∀ﾟ乁)
+
+Page alive: https://0v0-qaq.github.io/Here_We_Go/
+
+Yeeeeeeeahㄟ(˙∀ﾟ乁)
