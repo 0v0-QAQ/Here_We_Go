@@ -3,6 +3,21 @@ body {
     min-height: 100%;
 }
 
-a{color:#FFF}
+a{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color:#FFF
+}
 
-a:hover{color:#0aF}
+/*a:hover{color:#0aF}*/
+
+#mouse_track_block {
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 150px;
+    height: 150px;
+    z-index:-1;
+    background-color: #03c03c;
+    opacity: 0.5;
+}
