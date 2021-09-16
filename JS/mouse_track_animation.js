@@ -2,7 +2,7 @@
 // pageY和pageX的ie67ie兼容写法
 // 在页面的位置 = 看得见的 + 看不见的
 // pageY/pageX = event.clientY/clientX + scroll().top/scroll().left
-var obj = document.getElementsByTagName("div")[0];
+var obj = document.getElementById("mouse_track_block");
 var timer = null;
 var targetX = 0,
     targetY = 0,

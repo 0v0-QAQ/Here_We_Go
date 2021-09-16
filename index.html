@@ -6,8 +6,15 @@
     <link rel="stylesheet" href="CSS/style.css" />
 </head>
 <body>
-    <a href="3DPhoto.html">Let's go somewhere else....ᕕ( ᐛ )ᕗ</a>
+    <a id="hyperlink" href="3DPhoto.html">Let's go somewhere else....ᕕ( ᐛ )ᕗ</a>
     <div id="mouse_track_block"></div>
+    <script>
+        var hyperlink = document.getElementById("hyperlink");
+        t = 100 * Math.random() + "%";
+        l = 100 * Math.random() + "%";
+        hyperlink.style.top = t;
+        hyperlink.style.left = l;
+    </script>
     <script src="JS/mouse_click_animation.js"></script>
     <script src="JS/mouse_track_animation.js"></script>
 </body>
