@@ -10,10 +10,20 @@
     <div id="mouse_track_block"></div>
     <script>
         var hyperlink = document.getElementById("hyperlink");
+
         t = 100 * Math.random() + "%";
         l = 100 * Math.random() + "%";
         hyperlink.style.top = t;
         hyperlink.style.left = l;
+
+        setInterval(function(){
+            t = 100 * Math.random() + "%";
+            l = 100 * Math.random() + "%";
+            //hyperlink.innerText = "see ya!";
+            hyperlink.style.top = t;
+            hyperlink.style.left = l;
+            //hyperlink.innerText = "Let's go somewhere else....ᕕ( ᐛ )ᕗ";
+        }, 5000);
     </script>
     <script src="JS/mouse_click_animation.js"></script>
     <script src="JS/mouse_track_animation.js"></script>
