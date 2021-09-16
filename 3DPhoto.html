@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>HTML5 3D旋转图片相册 可鼠标悬停</title>
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="JS/echarts.min.js"></script>
     <link rel="stylesheet" href="CSS/3DPhoto_style.css" />
 </head>
 
@@ -17,12 +18,27 @@
             <figure><img src="images/img4.jpeg" alt=""></figure>
             <figure><img src="images/img5.jpeg" alt=""></figure>
             <figure><img src="images/img6.jpeg" alt=""></figure>
-
-<!--            <figure><img src="img1.jpeg" alt=""></figure>-->
-
-<!--            <figure><img src="img2.jpeg" alt=""></figure>-->
+            <div id="hardware">
+                <div id="cpu"></div>
+                <div id="storage"></div>
+                <div id="mem"></div>
+            </div>
+            <div id="dailynew"></div>
+            <div id="test2"></div>
+            <div id="test3"></div>
+            <div id="test4"></div>
+            <div id="test5"></div>
         </div>
     </div>
+    <script>
+        // 换算方法
+        let nowSize = function (val, initWidth = 1440) {
+            let nowClientWidth = $(window).width();
+            return Math.round(val * (nowClientWidth / initWidth));
+        };
+    </script>
+    <script src="JS/hardware.js"></script>
+    <script src="JS/dailynew.js"></script>
 </body>
 
 </html>

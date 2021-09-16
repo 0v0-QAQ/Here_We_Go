@@ -11,9 +11,9 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    min-height: 100%;
+html, body {
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -36,13 +36,19 @@ body {
     animation: rotation 20s infinite linear;
 }
 
-#carousel:hover {
-    animation-play-state: paused;
+#carousel > div{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    width: 220px;
+    height: 120px;
+    left: 10px;
+    top: 300px;
+    background-color: rgba(0,0,0,0.3);
 }
 
-#cpu {
-    position: absolute;
-    top: 50%;
+#carousel:hover {
+    animation-play-state: paused;
 }
 
 #carousel figure {
@@ -78,8 +84,16 @@ img:hover {
     animation: rotationX 1s linear;
 }
 
-#carousel div:nth-child(1) {
-    transform: rotateY(0deg) translateZ(488px);
+#cpu, #storage, #mem {
+    display: inline-block;
+    position: relative;
+    height: 50%;
+    width: 30%;
+}
+
+#test {
+    height: 100%;
+    width: 100%;
 }
 
 #carousel figure:nth-child(1) {
@@ -105,9 +119,29 @@ img:hover {
 #carousel figure:nth-child(6) {
     transform: rotateY(300deg) translateZ(288px);
 }
-
+/*
 #carousel figure:nth-child(7) {
     transform: rotateY(180deg);
+}*/
+
+#carousel div:nth-child(7) {
+    transform: rotateY(0deg) translateZ(288px);
+}
+
+#carousel div:nth-child(8) {
+    transform: rotateY(60deg) translateZ(288px);
+}
+#carousel div:nth-child(9) {
+    transform: rotateY(120deg) translateZ(288px);
+}
+#carousel div:nth-child(10) {
+    transform: rotateY(180deg) translateZ(288px);
+}
+#carousel div:nth-child(11) {
+    transform: rotateY(240deg) translateZ(288px);
+}
+#carousel div:nth-child(12) {
+    transform: rotateY(300deg) translateZ(288px);
 }
 
 @keyframes rotation {
