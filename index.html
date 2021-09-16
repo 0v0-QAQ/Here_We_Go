@@ -24,6 +24,23 @@
             hyperlink.style.left = l;
             //hyperlink.innerText = "Let's go somewhere else....ᕕ( ᐛ )ᕗ";
         }, 5000);
+
+        function changebgcolor() {
+            document.body.style.backgroundColor = "rgba(3,192,60,0.5)";//"#03c03c";opacity: 0.5
+        };
+
+        setTimeout(function(){
+            console.log("button revealed");
+
+            var btn = document.createElement("button");
+            btn.innerText = "~Reveal the Truth~<®>";
+            btn.style.position = "absolute";
+            btn.style.width = "180px";
+            btn.style.top = "80%";
+            btn.style.left = "80%";
+            btn.addEventListener("click", changebgcolor);
+            document.body.append(btn);
+        }, 10000)
     </script>
     <script src="JS/mouse_click_animation.js"></script>
     <script src="JS/mouse_track_animation.js"></script>
