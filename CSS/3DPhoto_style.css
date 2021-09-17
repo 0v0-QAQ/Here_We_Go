@@ -51,6 +51,10 @@ body {
     animation-play-state: paused;
 }
 
+#carousel:hover #sphere {
+    animation-play-state: paused;
+}
+
 #carousel figure {
     display: block;
     position: absolute;
@@ -63,15 +67,20 @@ body {
     border: solid 0px pink;
 }
 
-#carousel figure:hover {
-    //width: 440px;
-    //height: 240px;
-
+#sphere {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    margin: 0 auto;
+    top: 100px;
+    background-color: none;
+    animation: counterRotation 20s infinite linear;
 }
 
 img {
     filter: grayscale(1);
     cursor: pointer;
+    position: absolute;
     transition: all 0.3s ease 0s;
     width: 100%;
     height: 100%;
@@ -91,13 +100,9 @@ img:hover {
     width: 30%;
 }
 
-#test {
-    height: 100%;
-    width: 100%;
-}
-
 #carousel figure:nth-child(1) {
     transform: rotateY(0deg) translateZ(288px);
+    position:absolute;
 }
 
 #carousel figure:nth-child(2) {
@@ -150,6 +155,15 @@ img:hover {
     }
     to {
         transform: rotateY(360deg)
+    }
+}
+
+@keyframes counterRotation {
+    from {
+        transform: rotateY(360deg)
+    }
+    to {
+        transform: rotateY(0deg)
     }
 }
 
