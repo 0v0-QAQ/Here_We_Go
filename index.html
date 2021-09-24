@@ -10,21 +10,26 @@
     <a id="hyperlink2" href="https://0v0-qaq.github.io/somewhere/">Not ready...</a>
     <div id="mouse_track_block"></div>
     <script>
-        var hyperlink = document.getElementById("hyperlink");
+        let escapeText = function(id) {
+            var hyperlink = document.getElementById(id);
 
-        t = 100 * Math.random() + "%";
-        l = 100 * Math.random() + "%";
-        hyperlink.style.top = t;
-        hyperlink.style.left = l;
-
-        setInterval(function(){
             t = 100 * Math.random() + "%";
             l = 100 * Math.random() + "%";
-            //hyperlink.innerText = "see ya!";
             hyperlink.style.top = t;
             hyperlink.style.left = l;
-            //hyperlink.innerText = "Let's go somewhere else....ᕕ( ᐛ )ᕗ";
-        }, 5000);
+
+            setInterval(function(){
+                t = 100 * Math.random() + "%";
+                l = 100 * Math.random() + "%";
+                //hyperlink.innerText = "see ya!";
+                hyperlink.style.top = t;
+                hyperlink.style.left = l;
+                //hyperlink.innerText = "Let's go somewhere else....ᕕ( ᐛ )ᕗ";
+            }, 5000);
+        }
+
+        escapeText("hyperlink");
+        escapeText("hyperlink2");
 
         function changebgcolor() {
             document.body.style.backgroundColor = "rgba(3,192,60,0.5)";//"#03c03c";opacity: 0.5
